@@ -1,0 +1,157 @@
+
+/* navbar box */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/*  navigation bar logo and image */
+#logo{
+ margin: 30px 35px;
+ padding: 20px;
+}
+#logo img{
+    height: 70px;
+    padding: 10px;
+    margin: 10px 15px;
+
+}
+/* navigation bar : list style */
+#navbar ul {
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(113, 238, 238);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 70px;
+}
+#navbar ul li a {
+    color: black;
+    
+    display: block;
+    border-radius: 20px;
+    padding: 100px;
+    text-decoration: none;
+}
+#navbar ul li a:hover {
+    color: rgb(238, 225, 225);
+    background-color: rgb(68, 61, 61);
+
+       
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 100px;
+   
+ font-family: monospace;
+}
+h3{
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+p{
+    padding: 10px;
+    margin: -12px 175px 89px 217px;
+    font-size: 40px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+background: url("sam7.png.jpg") no-repeat center center/cover;
+    height:50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;   
+    
+}
+hr{
+    height: 20px;
+    background-color: black;
+    opacity: 0.50;
+}
+/* gallary */
+* {
+    box-sizing: border-box;
+  }
+ 
+  
+  body {
+    margin: auto;
+    font-family: Arial;
+    background-color: rgb(61, 56, 56);
+    
+
+  }
+  
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    display: flex;
+    width: 25%;
+    margin: 300px;
+    margin-right: 300px;
+    margin-top: 200px;
+    padding: 5px;
+  
+  }
+  .row{
+      display: grid;  
+      /* align-items: center;    */
+      /* grid-gap:0.5rem ; */
+      grid-template-columns: auto auto auto ;
+      /* justify-items: center; */
+  }
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+    border-radius: 50px;
+   float: right;
+
+  }
+  
+  .column img:hover {
+    opacity: 100%;
+    
+    
+   
+  }
+ 
+  /* contect form */
+
+.blackboard {
+    background: url("sam4.png.webp") no-repeat center center/cover;
+    
+    
+}
+.blackboard::before{
+    opacity: 0.99;
+    z-index: -1;
+}
+
+ .form p{
+    font-size: 200px;
+
+}
+.wipeout{
+box-sizing: border-box;
+    padding: 30px;
+}
